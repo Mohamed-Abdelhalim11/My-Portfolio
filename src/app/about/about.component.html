@@ -1,0 +1,19 @@
+<div class="about-header">
+  <h2>about me</h2>
+  <hr class="about-underline">
+</div>
+
+<div class="container d-flex justify-content-around align-items-center">
+  <div class="about">
+    <p>
+      I am a skilled front-end developer. With a strong foundation in HTML, CSS, and JavaScript, I excel at turning design concepts into responsive and interactive websites.
+      My expertise extends to modern frameworks such as Angular and Bootstrap.
+    </p>
+  </div>
+
+  <div class="skills-section">
+    <div class="skills">
+        <img *ngFor="let skill of Skills" [src]="skill" alt="Image" class="gallery-image">
+    </div>
+  </div>
+</div>

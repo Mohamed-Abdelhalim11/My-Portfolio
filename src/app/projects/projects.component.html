@@ -1,0 +1,16 @@
+<div class="projects-header">
+  <h2>PROJECTS</h2>
+  <hr class="projects-underline">
+</div>
+
+<div class="imgs-container">
+  <div class="box" *ngFor="let project of projects">
+    <img [src]="project.image" alt="{{project.title}}">
+    <div class="caption">
+      <h4>{{project.title}}</h4>
+      <a [href]="project.link" target="_blank">live</a>
+    </div>
+  </div>
+</div>
+
+
